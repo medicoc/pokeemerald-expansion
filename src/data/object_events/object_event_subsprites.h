@@ -1406,114 +1406,6 @@ static const struct Subsprite sOamTable_88x32_3[] = {
     }
 };
 
-static const struct Subsprite sOamTable_48x48[] = {
-    {
-        .x = -24,
-        .y = -24,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 0,
-        .priority = 2
-    },
-    {
-        .x =   8,
-        .y = -24,
-        .shape = SPRITE_SHAPE(16x8),
-        .size = SPRITE_SIZE(16x8),
-        .tileOffset = 4,
-        .priority = 2
-    },
-    {
-        .x = -24,
-        .y = -16,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 6,
-        .priority = 2
-    },
-    {
-        .x =   8,
-        .y = -16,
-        .shape = SPRITE_SHAPE(16x8),
-        .size = SPRITE_SIZE(16x8),
-        .tileOffset = 10,
-        .priority = 2
-    },
-    {
-        .x = -24,
-        .y =  -8,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 12,
-        .priority = 2
-    },
-    {
-        .x =   8,
-        .y =  -8,
-        .shape = SPRITE_SHAPE(16x8),
-        .size = SPRITE_SIZE(16x8),
-        .tileOffset = 16,
-        .priority = 2
-    },
-    {
-        .x = -24,
-        .y =   0,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 18,
-        .priority = 2
-    },
-    {
-        .x =   8,
-        .y =   0,
-        .shape = SPRITE_SHAPE(16x8),
-        .size = SPRITE_SIZE(16x8),
-        .tileOffset = 22,
-        .priority = 2
-    },
-    {
-        .x = -24,
-        .y =   8,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 24,
-        .priority = 2
-    },
-    {
-        .x =   8,
-        .y =   8,
-        .shape = SPRITE_SHAPE(16x8),
-        .size = SPRITE_SIZE(16x8),
-        .tileOffset = 28,
-        .priority = 2
-    },
-    {
-        .x = -24,
-        .y =  16,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 30,
-        .priority = 2
-    },
-    {
-        .x =   8,
-        .y =  16,
-        .shape = SPRITE_SHAPE(16x8),
-        .size = SPRITE_SIZE(16x8),
-        .tileOffset = 34,
-        .priority = 2
-    }
-};
-
-static const struct SubspriteTable sOamTables_48x48[] = {
-    {ARRAY_COUNT(sOamTable_48x48), sOamTable_48x48},
-    {ARRAY_COUNT(sOamTable_48x48), sOamTable_48x48},
-    {ARRAY_COUNT(sOamTable_48x48), sOamTable_48x48},
-    {ARRAY_COUNT(sOamTable_48x48), sOamTable_48x48},
-    {ARRAY_COUNT(sOamTable_48x48), sOamTable_48x48},
-    {ARRAY_COUNT(sOamTable_48x48), sOamTable_48x48}
-};
-
 // Used by Submarine Shadow
 static const struct SubspriteTable sOamTables_88x32[] = {
     {ARRAY_COUNT(sOamTable_88x32_0), sOamTable_88x32_0},
@@ -1522,7 +1414,6 @@ static const struct SubspriteTable sOamTables_88x32[] = {
     {ARRAY_COUNT(sOamTable_88x32_2), sOamTable_88x32_2},
     {ARRAY_COUNT(sOamTable_88x32_3), sOamTable_88x32_3},
     {ARRAY_COUNT(sOamTable_88x32_3), sOamTable_88x32_3}
-<<<<<<< HEAD
 };
 
 #if OW_LARGE_OW_SUPPORT
@@ -3003,6 +2894,4 @@ static const struct SubspriteTable sOamTables_48x48[] = {
     SUBSPRITE_TABLE_ENTRY(sOamTable_48x48_HotSprings), // hot springs
     SUBSPRITE_TABLE_ENTRY(sOamTable_48x48_Grass2), // long grass
     SUBSPRITE_TABLE_ENTRY(sOamTable_48x48_Grass1) // long grass priority 1
-=======
->>>>>>> just-lighting
 };

@@ -401,7 +401,6 @@ bool8 (*const gCopyPlayerMovementFuncs[])(struct ObjectEvent *, struct Sprite *,
     [COPY_MOVE_EMPTY_2]       = CopyablePlayerMovement_None,
 };
 
-<<<<<<< HEAD
 u8 (*const gMovementTypeFuncs_FollowPlayer[])(struct ObjectEvent *, struct Sprite *) = {
     MovementType_FollowPlayer_Shadow,
     MovementType_FollowPlayer_Active,
@@ -422,8 +421,6 @@ bool8 (*const gFollowPlayerMovementFuncs[])(struct ObjectEvent *, struct Sprite 
     [COPY_MOVE_EMPTY_2] = FollowablePlayerMovement_Idle,
 };
 
-=======
->>>>>>> just-lighting
 u8 (*const gMovementTypeFuncs_CopyPlayerInGrass[])(struct ObjectEvent *, struct Sprite *) = {
     MovementType_CopyPlayer_Step0,
     MovementType_CopyPlayerInGrass_Step1,
