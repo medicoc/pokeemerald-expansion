@@ -59,7 +59,10 @@ BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints::
 	pike_set PIKE_DATA_TOTAL_STREAKS, VAR_RESULT
 	special LoadPlayerParty
 	special HealPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 	pike_resethelditems
 	message BattleFrontier_BattlePikeLobby_Text_ShallRecordResults
 	waitmessage
@@ -81,7 +84,10 @@ BattleFrontier_BattlePikeLobby_EventScript_LostChallenge::
 	pike_set PIKE_DATA_WIN_STREAK_ACTIVE, FALSE
 	special LoadPlayerParty
 	special HealPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 	pike_resethelditems
 	pike_save 0
 	playse SE_SAVE
@@ -121,7 +127,10 @@ BattleFrontier_BattlePikeLobby_EventScript_TryEnterChallenge::
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
+<<<<<<< HEAD
 	callnative RemoveFollowingPokemon
+=======
+>>>>>>> just-lighting
 	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
@@ -186,7 +195,10 @@ BattleFrontier_BattlePikeLobby_EventScript_CancelChallengeSaveFailed::
 
 BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge::
 	special LoadPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 BattleFrontier_BattlePikeLobby_EventScript_CancelChallenge::
 	msgbox BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou, MSGBOX_DEFAULT
 BattleFrontier_BattlePikeLobby_EventScript_EndCancelChallenge::

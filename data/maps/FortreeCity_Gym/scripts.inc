@@ -5,7 +5,10 @@ FortreeCity_Gym_MapScripts::
 
 FortreeCity_Gym_OnTransition:
 	special RotatingGate_InitPuzzle
+<<<<<<< HEAD
 	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower bc of rotating gates
+=======
+>>>>>>> just-lighting
 	end
 
 FortreeCity_Gym_OnWarp:

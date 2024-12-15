@@ -758,12 +758,16 @@ Common_EventScript_PlayGymBadgeFanfare::
 	return
 
 Common_EventScript_OutOfCenterPartyHeal::
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	playfanfare MUS_HEAL
 	waitfanfare
 	special HealPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
 	fadescreen FADE_FROM_BLACK
+=======
+	fadescreenswapbuffers FADE_FROM_BLACK
+>>>>>>> just-lighting
 	return
 
 EventScript_RegionMap::
@@ -1148,6 +1152,10 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/move_tutors.inc"
 	.include "data/scripts/trainer_hill.inc"
 	.include "data/scripts/test_signpost.inc"
+<<<<<<< HEAD
 	.include "data/scripts/follower.inc"
+=======
+	.include "data/text/frontier_brain.inc"
+>>>>>>> just-lighting
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"

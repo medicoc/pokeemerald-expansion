@@ -2,7 +2,12 @@
 #define GUARD_DATA_H
 
 #include "constants/moves.h"
+<<<<<<< HEAD
 #include "constants/trainers.h"
+=======
+
+#define SPECIES_SHINY_TAG 500
+>>>>>>> just-lighting
 
 #define MAX_TRAINER_ITEMS 4
 

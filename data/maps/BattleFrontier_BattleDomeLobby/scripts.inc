@@ -68,7 +68,10 @@ BattleFrontier_BattleDomeLobby_EventScript_GiveBattlePoints::
 	dome_set DOME_DATA_WIN_STREAK_ACTIVE, TRUE
 	special LoadPlayerParty
 	special HealPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 	goto BattleFrontier_BattleDomeLobby_EventScript_AskRecordBattle
 
 BattleFrontier_BattleDomeLobby_EventScript_LostChallenge::
@@ -83,7 +86,10 @@ BattleFrontier_BattleDomeLobby_EventScript_LostChallenge::
 	dome_set DOME_DATA_ATTEMPTED_CHALLENGE, TRUE
 	special LoadPlayerParty
 	special HealPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 BattleFrontier_BattleDomeLobby_EventScript_AskRecordBattle::
 	dome_save 0
 	playse SE_SAVE
@@ -162,7 +168,10 @@ BattleFrontier_BattleDomeLobby_EventScript_TryEnterChallenge::
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattleDomeLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
+<<<<<<< HEAD
 	callnative RemoveFollowingPokemon
+=======
+>>>>>>> just-lighting
 	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
@@ -225,7 +234,10 @@ BattleFrontier_BattleDomeLobby_EventScript_CancelChallengeSaveFailed::
 
 BattleFrontier_BattleDomeLobby_EventScript_LoadPartyCancelChallenge::
 	special LoadPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 BattleFrontier_BattleDomeLobby_EventScript_CancelChallenge::
 	msgbox BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain, MSGBOX_DEFAULT
 BattleFrontier_BattleDomeLobby_EventScript_EndCancelChallenge::

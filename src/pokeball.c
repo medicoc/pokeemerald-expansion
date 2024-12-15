@@ -585,11 +585,6 @@ static void Task_DoPokeballSendOutAnim(u8 taskId)
 
     switch (throwCaseId)
     {
-    case POKEBALL_PLAYER_SLIDEIN: // don't actually send out, trigger the slide-in animation
-        gBattlerTarget = battlerId;
-        gSprites[ballSpriteId].callback = HandleBallAnimEnd;
-        gSprites[ballSpriteId].invisible = TRUE;
-        break;
     case POKEBALL_PLAYER_SENDOUT:
         gBattlerTarget = battlerId;
         gSprites[ballSpriteId].x = 24;
@@ -1079,6 +1074,7 @@ static void HandleBallAnimEnd(struct Sprite *sprite)
     bool8 affineAnimEnded = FALSE;
     u8 battlerId = sprite->sBattler;
 
+<<<<<<< HEAD
     if (sprite->data[7] == POKEBALL_PLAYER_SLIDEIN)
     {
         gSprites[gBattlerSpriteIds[sprite->sBattler]].callback = SpriteCB_PlayerMonSlideIn;
@@ -1086,6 +1082,8 @@ static void HandleBallAnimEnd(struct Sprite *sprite)
         gSprites[gBattlerSpriteIds[sprite->sBattler]].data[1] = 0x1000;
     }
 
+=======
+>>>>>>> just-lighting
     gSprites[gBattlerSpriteIds[battlerId]].invisible = FALSE;
     if (sprite->animEnded)
         sprite->invisible = TRUE;

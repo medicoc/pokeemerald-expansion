@@ -230,6 +230,11 @@ const union AnimCmd *const sAnims_Trainer[] ={
 const struct Trainer gTrainers[] =
 {
 #include "data/trainers.h"
+<<<<<<< HEAD
 };
 
 #include "data/text/follower_messages.h"
+=======
+#include "data/text/species_names.h"
+#include "data/text/move_names.h"
+>>>>>>> just-lighting

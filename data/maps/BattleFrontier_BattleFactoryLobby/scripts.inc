@@ -59,7 +59,10 @@ BattleFrontier_BattleFactoryLobby_EventScript_GiveBattlePoints::
 	waitmessage
 	frontier_checkairshow
 	special LoadPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 	factory_save 0
 	playse SE_SAVE
 	waitse
@@ -72,7 +75,10 @@ BattleFrontier_BattleFactoryLobby_EventScript_LostChallenge::
 	waitmessage
 	frontier_checkairshow
 	special LoadPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 	factory_set FACTORY_DATA_WIN_STREAK_ACTIVE, FALSE
 	factory_save 0
 	playse SE_SAVE
@@ -198,7 +204,10 @@ BattleFrontier_BattleFactoryLobby_EventScript_CancelChallengeSaveFailed::
 
 BattleFrontier_BattleFactoryLobby_EventScript_LoadPartyAndCancelChallenge::
 	special LoadPlayerParty
+<<<<<<< HEAD
 	callnative UpdateFollowingPokemon
+=======
+>>>>>>> just-lighting
 BattleFrontier_BattleFactoryLobby_EventScript_CancelChallenge::
 	msgbox BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit, MSGBOX_DEFAULT
 	release

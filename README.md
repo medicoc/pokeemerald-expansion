@@ -8,14 +8,28 @@ pokeemerald-expansion is a decomp hack base project based off pret's [pokeemeral
 
 ## Using pokeemerald-expansion
 
+<<<<<<< HEAD
 If you use pokeemerald-expansion in your hack, please add RHH (Rom Hacking Hideout) to your credits list. Optionally, you can list the version used, so it can help players know what features to expect.
 You can phrase it as the following:
 ```
 Based off RHH's pokeemerald-expansion 1.10.0 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
+=======
+> Note: Unless you have a specific need for it, you should probably use `followers-expanded-id` over this.
+
+**icons** branch:
+* Everything from the **followers** branch.
+* All pokemon icons updated to Gen 6, based on [this repo](https://github.com/msikma/pokesprite/tree/master/icons/pokemon/regular)
+* This includes compatibility with the PC, trade, contests, mail, Battle Dome. Examples:
+![PC](https://i.imgur.com/wzwJfd1.png)
+![Party](https://i.imgur.com/8hbE88t.png)
+![Contest](https://i.imgur.com/S9mCEFL.png)
+* Icons share palettes with front sprites, meaning that shiny pokemon will also have shiny icons!
+>>>>>>> just-lighting
 
 Please follow the instructions in `INSTALL.md` to get pokeemerald-expansion set up on your machine.
 
+<<<<<<< HEAD
 ## What features are included?
 - ***IMPORTANT*❗❗ Read through these to learn what features you can toggle**:
     - [Battle configurations](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/battle.h)
@@ -161,8 +175,23 @@ Please follow the instructions in `INSTALL.md` to get pokeemerald-expansion set 
     - Fixed overworld snow effect.
 
 There are some mechanics, moves and abilities that are missing and being developed. Check [the project's milestones](https://github.com/rh-hideout/pokeemerald-expansion/milestones) to see which ones.
+=======
+**just-lighting** branch:
+* `lighting-expanded-id` but with following pokémon code & assets completely removed. (This allows for more than 255 OW graphics)
+* Saves with following pokémon can safely be loaded.
+
+**followers-expanded-id** branch:
+* Like `followers`, but includes expands OW graphicsIds to 16-bits
+in a backwards compatible way
+* Includes support for compressed OW graphics
+
+Additional branches to mention:
+
+* `lighting-expanded-id` - like the above but for `lighting`.
+>>>>>>> just-lighting
 
 
+<<<<<<< HEAD
 ### [Documentation on features can be found here](https://github.com/rh-hideout/pokeemerald-expansion/wiki)
 
 ## If I already have a project based on regular pokeemerald, can I use pokeemerald-expansion?
@@ -203,3 +232,39 @@ The project has now gotten larger and DizzyEgg is now maintaining the project as
 A Discord-based ROM hacking community that has many members who hack using the disassembly and decompilation projects for Pokémon. Quite a few contributors to the original feature branches by DizzyEgg were members of ROM Hacking Hideout. You can call it RHH for short!
 
 [Click here to join the RHH Discord Server!](https://discord.gg/6CzjAG6GZk)
+=======
+## FAQ
+### `(followers*)` Q: Where are the config settings?
+A: Configuration for the follower system is mostly in [event_objects.h](include/constants/event_objects.h):
+```c
+// If true, follower pokemon will bob up and down
+// during their idle & walking animations
+#define OW_MON_BOBBING  TRUE
+
+// If true, adds a small amount of overhead
+// to OW code so that large (48x48, 64x64) OWs
+// will display correctly under bridges, etc.
+#define LARGE_OW_SUPPORT TRUE
+```
+
+### `(lighting)` Q: How do I mark certain colors in a palette as light-blended?
+A: Create a `.pla` file in the same folder as the `.pal` with the same name.
+
+In this file you can enter color indices [0,15]
+on separate lines to mark those colors as being light-blended, i.e:
+
+`06.pla:`
+```
+# A comment
+0 # if color 0 is listed, uses it to blend with instead of the default!
+1
+9
+10
+```
+
+You might have to `make mostlyclean` or change the `.pal` file to pick up the changes.
+
+## See also
+
+For contacts and other pret projects, see [pret.github.io](https://pret.github.io/).
+>>>>>>> just-lighting

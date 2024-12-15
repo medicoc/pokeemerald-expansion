@@ -1,6 +1,4 @@
 .set LOCALID_DAYCARE_MAN, 3
-.set LOCALID_DAYCARE_MON_0, 25
-.set LOCALID_DAYCARE_MON_1, 26
 
 Route117_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route117_OnTransition
@@ -8,15 +6,9 @@ Route117_MapScripts::
 
 Route117_OnTransition:
 	call Route117_EventScript_TryMoveDayCareMan
-	@ set flags for OW daycare mons
-	setflag FLAG_TEMP_1
-	setflag FLAG_TEMP_2
-	getdaycaregfx VAR_OBJ_GFX_ID_0, VAR_OBJ_GFX_ID_1, VAR_TEMP_0, VAR_TEMP_1
-	switch VAR_RESULT
-	case 2, Route117_EventScript_ShowDaycareMon1
-	case 1, Route117_EventScript_ShowDaycareMon0
 	end
 
+<<<<<<< HEAD
 Route117_EventScript_ShowDaycareMon1:
 	@ set pokemon movement type based on compatibility
 	special SetDaycareCompatibilityString
@@ -44,6 +36,8 @@ Route117_EventScript_DaycareMonMaxCompatibility: @ facing; walk in place
 	setobjectmovementtype LOCALID_DAYCARE_MON_1, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
 	return
 
+=======
+>>>>>>> just-lighting
 Route117_EventScript_TryMoveDayCareMan::
 	goto_if_unset FLAG_PENDING_DAYCARE_EGG, Route117_EventScript_StopMoveDayCareMan
 	setobjectxyperm LOCALID_DAYCARE_MAN, 47, 6
